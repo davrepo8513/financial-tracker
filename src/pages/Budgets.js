@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useFinance } from '../context/FinanceContext';
 import { Plus, AlertTriangle } from 'lucide-react';
 import { toast } from 'react-toastify';

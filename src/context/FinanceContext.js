@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer, useEffect } from 'react';
+import React, { createContext, useContext, useReducer, useEffect } from 'react';
 import { toast } from 'react-toastify';
 
 const FinanceContext = createContext();
@@ -208,7 +208,7 @@ export const FinanceProvider = ({ children }) => {
     if (hasChanged) {
       dispatch({ type: 'LOAD_DATA', payload: { ...state, budgets: updatedBudgets } });
     }
-  }, [state]);
+  }, [state.transactions, state.budgets]);
 
   const value = {
     ...state,
