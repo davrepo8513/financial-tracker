@@ -208,7 +208,7 @@ export const FinanceProvider = ({ children }) => {
     if (hasChanged) {
       dispatch({ type: 'LOAD_DATA', payload: { ...state, budgets: updatedBudgets } });
     }
-  }, [state.transactions, state.budgets]);
+  }, [state]);
 
   const value = {
     ...state,
