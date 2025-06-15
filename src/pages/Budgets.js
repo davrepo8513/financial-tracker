@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useFinance } from '../context/FinanceContext';
-import { Plus, Edit, Trash2, AlertTriangle } from 'lucide-react';
+import { Plus, AlertTriangle } from 'lucide-react';
 import { toast } from 'react-toastify';
 import BudgetModal from '../components/Budgets/BudgetModal';
 import BudgetCard from '../components/Budgets/BudgetCard';
